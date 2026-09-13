@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="星路，按时间探索艺人与站姐的摄影作品。" name="description">
+    <title>星路 · 站姐摄影作品交流平台</title>
+    <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%237956cf'/%3E%3Cpath d='M32 9 38 25 55 32 38 39 32 55 25 39 9 32 25 25Z' fill='white'/%3E%3C/svg%3E" rel="icon"
+          type="image/svg+xml">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="app.js"></script>
+</head>
+<body>
+<header class="header"><a aria-label="星路首页" class="brand" href="#home"><span
+        class="brandmark">✦</span><strong>星路</strong><span class="brand-sub">站姐摄影作品交流平台</span></a>
+    <nav aria-label="主导航"><a data-nav="home" href="#home">首页</a><a data-nav="library" href="#library">作品库</a><a
+            data-nav="join" href="#join">站姐入驻 <span>↗</span></a></nav>
+    <form id="search" role="search">
+        <svg aria-hidden="true" fill="none" height="19" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"
+             width="19">
+            <circle cx="10" cy="10" r="6.5"/>
+            <path d="m15 15 5 5"/>
+        </svg>
+        <input aria-label="搜索艺人或站姐" autocomplete="off" id="query" placeholder="搜索艺人 / 站姐">
+        <button type="submit">搜索</button>
+    </form>
+</header>
+<main id="main"></main>
+<footer><a class="footer-brand" href="#home">✦ 星路</a><span>每一帧热爱，都有迹可循。</span><small>体验版</small></footer>
+<dialog id="lightbox">
+    <button aria-label="关闭照片" class="close">×</button>
+    <button aria-label="上一张照片" class="light-prev">‹</button>
+    <img alt="摄影作品大图">
+    <button aria-label="下一张照片" class="light-next">›</button>
+    <div class="light-caption"></div>
+</dialog>
+</body>
+</html>
